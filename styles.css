@@ -1,100 +1,123 @@
-body{
-    
-    background-color: rgba(33, 3, 73, 0.637);
-    background-blend-mode: lighten;
+.roboto-unique-class {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+.montserrat-unique-class {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-image: linear-gradient(to right, #1f73da, #5881dd, #237ae2);
+    margin: 10px auto;
+    padding: 10px;
     color: white;
+    max-width: 1200px;
 }
 
 .headerTop {
-  
     color: white;
-    font-size: 30px;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    width: 100%;
     text-align: center;
+    padding: 20px;
+    z-index: 1000;
+    text-shadow: 0 0 5px rgba(2, 2, 1, 0.5);
+    opacity: 1;
+}
 
-    margin: auto;
-    margin-bottom: 20px;
+.headerTop img {
+    width: 500px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 50px ;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-right: 20px;
+    box-shadow:  0 0 10px rgba(2, 2, 1, 5);
+    
+    
 }
 
 
-.books, .music, .games {
-    width: 50vh;
+h1 {
+    display: block;
+    top: 0px;
+    font-size: 50px;
+}
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(103, 50, 226);
+
+.flex {
+    display:flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* the pictures of the topics*/
+
+.books-pic {
     border-radius: 50px;
+    width: 40vh;
+    max-width: 40vh;
+    border: 5px solid white;
+    box-shadow:  0 0 10px rgba(2, 2, 1, 5);
 
-    margin: auto;
-    padding: 20px;
-
-    margin-bottom: 20px;
-
-    
 }
 
-
-.bookspic, .musicpic, .gamespic {
-    width: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(103, 50, 226);
+.music-pic {
     border-radius: 50px;
+    width: 40vh;
+    max-width: 40vh;
+    border: 5px solid white;
+    box-shadow:  0 0 10px rgba(2, 2, 1, 5);
+}
 
-    margin: auto;
-    padding: 20px;
-
-    margin-bottom: 20px;
-    
-} 
-
-
-.HeaderBottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #aaaaff;
-    width: 50vh;
-    margin: 0 auto;
-    border-radius: 20px;
-    padding: 20px;
+.games-pic {
+    border-radius: 50px;
+    width: 40vh;
+    max-width: 40vh;
+    border: 5px solid white;
+    box-shadow:  0 0 10px rgba(2, 2, 1, 5);
 }
 
 
-.Reasons {
-    background-color: #aaaaff;
-    width: 50vh;
-    border-radius: 20px;
-    padding: 25px;
-    margin-bottom: 20px;
-    
-    
+/*The title of the topics*/
+
+h2 {
+    font-size: 40px;
+    text-align: left;
     margin-top: 20px;
-    margin-left: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.Rediscover {
-    background-color: #aaaaff;
-    width: 50vh;
-    border-radius: 20px;
-    padding: 25px;
-    
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 20px;
+    color: white;
+    text-shadow: 0 0 5px rgba(2, 2, 1, 0.5);
 }
 
-footer {
-    background-color: #aaaaff;
-    padding: 15px;
-
-    align-items: center;
-    text-align: center;
-
+/* the text content of the topics*/
+p {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 0 0 5px rgba(2, 2, 1, 0.5);
 }
+
+.books-link:hover{
+    mask-image: url(./resources/whitebooks.png);
+    z-index: 5000;
+    background-color: white;
+}
+
+
