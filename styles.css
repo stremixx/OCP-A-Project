@@ -156,7 +156,7 @@ p {
     top: 0;
     left: 0;
     width: 100%; /* Match the width of the parent container */
-    height: 95%; /* Match the height of the parent container */
+    height: 90%; /* Match the height of the parent container */
     background: rgba(255, 255, 255, 0.8); /* Slight transparency for better visibility */
     opacity: 0;
     visibility: hidden;
@@ -212,6 +212,7 @@ p {
 
     .overlay-1, .overlay-2, .overlay-3 {
         font-size: 18px; /* Adjust font size for smaller screens */
+        border-radius: 3%;
     }
 
     h2 {
@@ -232,5 +233,49 @@ p {
     .headerTop img {
         width: 80%; /* Adjust header image size */
         margin-bottom: 20px; /* Add spacing below the image */
+    }
+}
+
+
+
+/* Media query for medium screen sizes (iPads and tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .flex {
+        flex-direction: row; /* Display items in a row */
+        gap: 30px; /* Adjust the gap between items */
+        justify-content: center; /* Center items horizontally */
+    }
+
+    .books-pic, .music-pic, .games-pic {
+        width: 30vw; /* Adjust image width for medium screens */
+        max-width: 30vw;
+        border-radius: 30px; /* Slightly reduce border radius for medium screens */
+    }
+
+    .overlay-1, .overlay-2, .overlay-3 {
+        font-size: 20px; /* Adjust font size for overlays */
+        border-radius: 5%; /* Adjust border radius for overlays */
+    }
+    
+
+    h2 {
+        font-size: 35px; /* Adjust heading size for medium screens */
+        text-align: center; /* Center-align text */
+    }
+
+    p {
+        font-size: 18px; /* Adjust paragraph font size */
+        text-align: center; /* Center-align text */
+    }
+
+    .headerTop {
+        flex-direction: row; /* Keep header elements in a row */
+        text-align: center; /* Center-align header text */
+        align-items: center; /* Align items vertically */
+    }
+
+    .headerTop img {
+        width: 50%; /* Adjust header image size for medium screens */
+        margin-bottom: 0; /* Remove extra spacing below the image */
     }
 }
