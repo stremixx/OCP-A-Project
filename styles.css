@@ -21,6 +21,7 @@ body {
     padding: 10px;
     color: white;
     max-width: 1200px;
+    overflow-x: hidden; /* Disable horizontal scrolling */
 }
 
 .headerTop {
@@ -104,12 +105,12 @@ p {
     
 }
 
-.overlay-1, .overlay-2, .overlay-3 { /* what goes over the picture */
+.overlay-1{ /* what goes over the picture */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%; /* Match the width of the parent container */
-    height: 100%; /* Match the height of the parent container */
+    height: 98%; /* Match the height of the parent container */
     background: rgba(255, 255, 255, 0.8); /* Slight transparency for better visibility */
     opacity: 0;
     visibility: hidden;
@@ -123,7 +124,52 @@ p {
     text-transform: uppercase;
     pointer-events: none;
     border-radius: 50px; /* Match the border radius of the image */
-    
+}
+
+
+
+
+.overlay-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Match the width of the parent container */
+    height: 98%; /* Match the height of the parent container */
+    background: rgba(255, 255, 255, 0.8); /* Slight transparency for better visibility */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    pointer-events: none;
+    border-radius: 50px; /* Match the border radius of the image */
+
+}
+
+.overlay-3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Match the width of the parent container */
+    height: 90%; /* Match the height of the parent container */
+    background: rgba(255, 255, 255, 0.8); /* Slight transparency for better visibility */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    pointer-events: none;
+    border-radius: 50px; /* Match the border radius of the image */
 }
 
 .books-link:hover .overlay-1, 
