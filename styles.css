@@ -110,7 +110,7 @@ p {
     top: 0;
     left: 0;
     width: 100%; /* Match the width of the parent container */
-    height: 98%; /* Match the height of the parent container */
+    height: 99%; /* Match the height of the parent container */
     background: rgba(255, 255, 255, 0.8); /* Slight transparency for better visibility */
     opacity: 0;
     visibility: hidden;
@@ -134,7 +134,7 @@ p {
     top: 0;
     left: 0;
     width: 100%; 
-    height: 98%; /* Match the height of the parent container */
+    height: 99%; /* Match the height of the parent container */
     background: rgba(255, 255, 255, 0.8); /* Slight transparency for better visibility */
     opacity: 0;
     visibility: hidden;
@@ -156,7 +156,7 @@ p {
     top: 0;
     left: 0;
     width: 100%; /* Match the width of the parent container */
-    height: 90%; /* Match the height of the parent container */
+    height: 95%; /* Match the height of the parent container */
     background: rgba(255, 255, 255, 0.8); /* Slight transparency for better visibility */
     opacity: 0;
     visibility: hidden;
