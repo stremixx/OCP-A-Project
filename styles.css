@@ -67,29 +67,13 @@ h1 {
 
 /* the pictures of the topics*/
 
-.books-pic {
+.books-pic, .music-pic, .games-pic {
     border-radius: 50px;
     width: 40vh;
     max-width: 40vh;
     border: 5px solid white;
     box-shadow:  0 0 10px rgba(2, 2, 1, 5);
 
-}
-
-.music-pic {
-    border-radius: 50px;
-    width: 40vh;
-    max-width: 40vh;
-    border: 5px solid white;
-    box-shadow:  0 0 10px rgba(2, 2, 1, 5);
-}
-
-.games-pic {
-    border-radius: 50px;
-    width: 40vh;
-    max-width: 40vh;
-    border: 5px solid white;
-    box-shadow:  0 0 10px rgba(2, 2, 1, 5);
 }
 
 
@@ -114,10 +98,93 @@ p {
     text-shadow: 0 0 5px rgba(2, 2, 1, 0.5);
 }
 
-.books-link:hover{
-    mask-image: url(./resources/whitebooks.png);
-    z-index: 5000;
-    background-color: white;
+.books-link, .music-link, .games-link {
+    position: relative; /* Ensure the overlay is positioned relative to the link container */
+    display: inline-block;
+    
+}
+
+.overlay-1, .overlay-2, .overlay-3 { /* what goes over the picture */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Match the width of the parent container */
+    height: 100%; /* Match the height of the parent container */
+    background: rgba(255, 255, 255, 0.8); /* Slight transparency for better visibility */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    pointer-events: none;
+    border-radius: 50px; /* Match the border radius of the image */
+    
+}
+
+.books-link:hover .overlay-1, 
+.music-link:hover .overlay-2, 
+.games-link:hover .overlay-3 {
+    opacity: 1;
+    visibility: visible;
+    
 }
 
 
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Reduce the gap between items */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .books-pic, .music-pic, .games-pic {
+        width: 80vw; /* Adjust image width to fit smaller screens */
+        max-width: 80vw;
+        border-radius: 20px; /* Slightly reduce border radius for smaller screens */
+    }
+
+    .overlay-1, .overlay-2, .overlay-3 {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    h2 {
+        font-size: 30px; /* Reduce heading size */
+        text-align: center; /* Center-align text for better readability */
+    }
+
+    p {
+        font-size: 16px; /* Reduce paragraph font size */
+        text-align: center; /* Center-align text */
+    }
+
+    .headerTop {
+        flex-direction: column; /* Stack header elements vertically */
+        text-align: center; /* Center-align header text */
+    }
+
+    .headerTop img {
+        width: 80%; /* Adjust header image size */
+        margin-bottom: 20px; /* Add spacing below the image */
+    }
+}
