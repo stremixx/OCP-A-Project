@@ -158,7 +158,7 @@ div {
 
 .home-icon:hover {
     transform: scale(1.1); /* Slight zoom effect on hover */
-    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.8); /* Add shiny glow effect */
+    box-shadow: 0 0 20px 10px rgba(189, 57, 201, 0.8); /* Add shiny glow effect */
 }
 
 .home-icon:active {
