@@ -26,8 +26,9 @@ body {
     background-blend-mode: overlay;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.76); /* backimage opacity */
-    backdrop-filter: blur(3px); /* Apply blur effect */
-    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    backdrop-filter: blur(3px); 
+    -webkit-backdrop-filter: blur(10px); /*for buddy pal safari to work*/
+    background-attachment: fixed; /* Prevent background from scrolling */
 }
 
 .headerTop {
