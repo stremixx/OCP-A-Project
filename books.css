@@ -1,16 +1,24 @@
 /* General Typography */
 body {
     font-family: "Montserrat", sans-serif;
-    background-image: linear-gradient(to right, #250430, #4b1a58, #250430);
+  
     margin: 10px auto;
     padding: 10px;
     color: white;
     max-width: 1200px;
     overflow-x: hidden; 
+
+    background: linear-gradient(to right, #250430, #8e36a7, #250430), url("./resources/background.jpg");
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.479); /* backimage opacity */
+    backdrop-filter: blur(3px); 
+    -webkit-backdrop-filter: blur(10px); /*for buddy pal safari to work*/
+    background-attachment: fixed; /* Prevent background from scrolling */
     
 }
 .header {
-    background-image: url("../resources/booksbackground.jpg");
+    background-image: url("./resources/booksbackground.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,6 +40,8 @@ body {
     box-shadow: 0 0 15px rgba(2, 2, 1, 0.5); 
     color: white; 
     text-shadow: 0 0 5px rgba(2, 2, 1, 0.5);
+
+    background-color: rgba(0, 0, 0, 0.479);
 }
 
 .content h3 {
@@ -91,6 +101,8 @@ div {
     margin: 0 auto; 
     box-shadow: 0 0 10px rgba(2, 2, 1, 0.5);
     border-radius: 10px;
+
+    background-color: rgba(0, 0, 0, 0.479);
 }
 
 .bookcovers {
@@ -106,6 +118,9 @@ div {
     box-shadow: 0 0 15px rgba(2, 2, 1, 0.5); 
     color: white; 
     text-shadow: 0 0 5px rgba(2, 2, 1, 0.5);
+
+    background-color: rgba(0, 0, 0, 0.479);
+
 }
 
 .bookcovers h2 {
@@ -145,6 +160,8 @@ div {
     box-shadow: 0 0 15px rgba(2, 2, 1, 0.5); 
     color: white; 
     text-shadow: 0 0 5px rgba(2, 2, 1, 0.5);
+
+    background-color: rgba(0, 0, 0, 0.479);
 }
 
 .home-icon {
