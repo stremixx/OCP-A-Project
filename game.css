@@ -1,37 +1,47 @@
 /* General Typography */
 body {
     font-family: "Montserrat", sans-serif;
-    background-image: linear-gradient(to right, #1f73da, #5881dd, #237ae2);
     margin: 10px auto;
     padding: 10px;
     color: white;
     max-width: 1200px;
     overflow-x: hidden;
+
+    background: linear-gradient(to right, #250430, #8e36a7, #250430), url("./resources/gamesback.jpg");
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.479); /* Backimage opacity */
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    background-attachment: fixed; /* Prevent background from scrolling */
 }
 
 .header {
-    background-image: url("../resources/gamebackground.jpg");
+    background-image: url("./resources/gamebackground.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .content {
-    background-color: rgba(15, 57, 109, 0.9);
+    background-color: rgba(2, 2, 1, 0.5);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(2, 2, 1, 0.5);
     color: white;
     text-shadow: 0 0 5px rgba(2, 2, 1, 0.5);
+
 }
 
 .gamecontent {
-    background-color: rgba(15, 57, 109, 0.9);
+    background-color: rgba(50, 4, 71, 0.9);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(2, 2, 1, 0.5);
     color: white;
     text-shadow: 0 0 5px rgba(2, 2, 1, 0.5);
+
+    background-color: rgba(0, 0, 0, 0.479);
 }
 
 .gamecovers {
@@ -40,12 +50,14 @@ body {
     gap: 20px;
     margin-top: 20px;
     flex-wrap: wrap;
-    background-color: rgba(15, 57, 109, 0.9);
+    background-color: rgba(50, 4, 71, 0.9);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(2, 2, 1, 0.5);
     color: white;
     text-shadow: 0 0 5px rgba(2, 2, 1, 0.5);
+
+    background-color: rgba(0, 0, 0, 0.479);
 }
 
 .gamecovers img {
@@ -53,7 +65,7 @@ body {
     height: 200px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(2, 2, 1, 0.5);
-    object-fit: cover;
+    object-fit: cover; /* Ensures the image covers the entire box */
 }
 
 .game-image {
@@ -70,19 +82,20 @@ body {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 20px;
-
-    background-color: rgba(15, 57, 109, 0.9); 
+    background-color: rgba(50, 4, 71, 0.9);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(2, 2, 1, 0.5); 
-    color: white; 
+    box-shadow: 0 0 15px rgba(2, 2, 1, 0.5);
+    color: white;
     text-shadow: 0 0 5px rgba(2, 2, 1, 0.5);
+
+    background-color: rgba(0, 0, 0, 0.479);
 }
 
 .home-icon {
-    width: 50px; 
+    width: 50px;
     height: 50px;
-    border-radius: 50%; 
+    border-radius: 50%;
     box-shadow: 0 0 10px rgba(2, 2, 1, 0.5);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     background-color: white;
@@ -90,7 +103,7 @@ body {
 
 .home-icon:hover {
     transform: scale(1.1); /* Slight zoom effect on hover */
-    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.8); /* Add shiny glow effect */
+    box-shadow: 0 0 20px 10px rgba(189, 57, 201, 0.8); /* Add shiny glow effect */
 }
 
 .home-icon:active {

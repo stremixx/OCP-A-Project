@@ -9,3 +9,13 @@
     opacity: 1; /* Fully visible */
     transform: translateY(0); /* Move to its final position */
 }
+
+/* Ensure the body fades in */
+body.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+body.fade-in.visible {
+    opacity: 1;
+}
