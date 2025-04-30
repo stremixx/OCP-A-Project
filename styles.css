@@ -172,6 +172,10 @@ p {
     border-radius: 50px; /* Match the border radius of the image */
 }
 
+
+
+
+
 .books-link:hover .overlay-1, 
 .music-link:hover .overlay-2, 
 .games-link:hover .overlay-3 {
