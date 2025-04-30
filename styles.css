@@ -17,7 +17,7 @@
 body {
     font-family: "Montserrat", sans-serif;
     background: linear-gradient(to right, #250430, #8e36a7, #250430),
-     url("./resources/back.jpg");
+     url("./resources/back.webp");
     margin: 10px auto;
     padding: 10px;
     color: white;
