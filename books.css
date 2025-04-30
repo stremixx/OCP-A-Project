@@ -1,14 +1,14 @@
 /* General Typography */
 body {
     font-family: "Montserrat", sans-serif;
-    background-image: linear-gradient(to right, #1f73da, #5881dd, #237ae2);
+    background-image: linear-gradient(to right, #250430, #8e36a7, #250430);
     margin: 10px auto;
     padding: 10px;
     color: white;
     max-width: 1200px;
     overflow-x: hidden; 
+    
 }
-
 .header {
     background-image: url("../resources/booksbackground.jpg");
     background-size: cover;
@@ -17,7 +17,7 @@ body {
 }
 
 .content {
-    background-color: rgba(15, 57, 109, 0.9); 
+    background-color: rgba(2, 2, 1, 0.5); 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(2, 2, 1, 0.5); 
@@ -26,7 +26,7 @@ body {
 }
 
 .ereaderscontent {
-    background-color: rgba(15, 57, 109, 0.9); 
+    background-color: rgba(50, 4, 71, 0.9); 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(2, 2, 1, 0.5); 
@@ -100,7 +100,7 @@ div {
     margin-top: 20px;
     flex-wrap: wrap;
 
-    background-color: rgba(15, 57, 109, 0.9); 
+    background-color: rgba(50, 4, 71, 0.9); 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(2, 2, 1, 0.5); 
@@ -139,7 +139,7 @@ div {
     margin-top: 40px;
     margin-bottom: 20px;
 
-    background-color: rgba(15, 57, 109, 0.9); 
+    background-color: rgba(50, 4, 71, 0.9); 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(2, 2, 1, 0.5); 
@@ -165,14 +165,4 @@ div {
     transform: scale(0.95); /* Slight shrink effect on click */
 }
 
-/* Fade-in effect */
-.fade-in {
-    opacity: 0; /* Start fully transparent */
-    transform: translateY(20px); /* Start slightly below its final position */
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
-}
 
-.fade-in.visible {
-    opacity: 1; /* Fully visible */
-    transform: translateY(0); /* Move to its final position */
-}

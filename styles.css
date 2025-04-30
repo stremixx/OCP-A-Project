@@ -16,12 +16,18 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    background-image: linear-gradient(to right, #1f73da, #5881dd, #237ae2);
+    background: linear-gradient(to right, #250430, #8e36a7, #250430),
+     url("./resources/back.jpg");
     margin: 10px auto;
     padding: 10px;
     color: white;
     max-width: 1200px;
-    overflow-x: hidden; /* Disable horizontal scrolling */
+    overflow-x: hidden; 
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.76); /* backimage opacity */
+    backdrop-filter: blur(3px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
 }
 
 .headerTop {
