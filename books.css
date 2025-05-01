@@ -1,4 +1,8 @@
-/* General Typography */
+
+html {
+    scroll-behavior: smooth;     
+}
+
 body {
     font-family: "Montserrat", sans-serif;
   
@@ -11,10 +15,10 @@ body {
     background: linear-gradient(to right, #250430, #8e36a7, #250430), url("./resources/background.webp");
     background-blend-mode: overlay;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.479); /* backimage opacity */
+    background-color: rgba(0, 0, 0, 0.479); 
     backdrop-filter: blur(3px); 
     -webkit-backdrop-filter: blur(10px); /*for buddy pal safari to work*/
-    background-attachment: fixed; /* Prevent background from scrolling */
+    background-attachment: fixed; 
 
     
     
