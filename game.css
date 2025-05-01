@@ -81,7 +81,7 @@ p {
     height: 200%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(2, 2, 1, 0.5);
-    object-fit: cover; /* Ensures the image covers the entire box */
+    object-fit: cover; 
 }
 
 .gamecontent {
@@ -107,17 +107,31 @@ p {
     box-shadow: 0 0 15px rgba(2, 2, 1, 0.5);
     color: white;
     text-shadow: 0 0 5px rgba(2, 2, 1, 0.5);
-
-    background-color: rgba(0, 0, 0, 0.479);
 }
 
-.gamecovers img {
+.game-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 200px;
+}
+
+.game-item img {
     max-width: 200px;
     height: 200px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(2, 2, 1, 0.5);
-    object-fit: cover; /* Ensures the image covers the entire box */
+    object-fit: cover;
 }
+
+.game-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+    text-shadow: 0 0 5px rgba(2, 2, 1, 0.5);
+}
+
 
 .game-image {
     max-width: 100%;
@@ -127,6 +141,22 @@ p {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(2, 2, 1, 0.5);
 }
+
+.gamecovers img {
+    max-width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(2, 2, 1, 0.5);
+    object-fit: cover;
+}
+
+.gamecovers  {
+    box-shadow: 0 0 10px rgba(2, 2, 1, 0.5);
+    text-shadow: 0 0 5px rgba(2, 2, 1, 0.5);
+    background-color: rgba(0, 0, 0, 0.479);  
+}
+
+
 
 /* Go Home Icon Styling */
 .go-home-container {
@@ -160,3 +190,80 @@ p {
 .home-icon:active {
     transform: scale(0.95); /* Slight shrink effect on click */
 }
+
+/* Mobile Devices (max-width: 600px) */
+@media (max-width: 600px) {
+    body {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .header h2, .header h3 {
+        font-size: 20px;
+    }
+
+    .content, .musiccontent, .albumcovers, .musiclistening {
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    .musiccontent img, .albumcovers img, .musiclistening img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .albumcovers {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .home-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Tablets (max-width: 900px) */
+@media (max-width: 900px) {
+    body {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .header h1 {
+        font-size: 35px;
+    }
+
+    .header h2, .header h3 {
+        font-size: 22px;
+    }
+
+    .content, .musiccontent, .albumcovers, .musiclistening {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    .musiccontent img, .albumcovers img, .musiclistening img {
+        width: 90%;
+        max-width: 90%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .albumcovers {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .home-icon {
+        width: 45px;
+        height: 45px;
+    }
+}
+
