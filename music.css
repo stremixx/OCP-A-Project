@@ -1,0 +1,212 @@
+/* General Typography */
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 10px auto;
+    padding: 10px;
+    color: white;
+    max-width: 1200px;
+    overflow-x: hidden;
+
+    background: linear-gradient(to right, #250430, #8e36a7, #250430), url("./resources/musicback.jpg");
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.729); /* Backimage opacity */
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    background-attachment: fixed; /* Prevent background from scrolling */
+}
+
+.header {
+    background-image: url("./resources/violin.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(2, 2, 1, 0.5); 
+    color: white; 
+    text-shadow: 0 0 5px rgba(2, 2, 1, 0.5);
+}
+
+.header h1 {
+    text-align: left;
+    font-size: 40px;
+    margin-bottom: 20px;
+} 
+
+.header h2 {
+    text-align: left;
+    font-size: 25px; 
+}
+
+.header h3 {
+    text-align: left;
+    font-size: 25px; 
+}
+
+.content {
+    background-color: rgba(2, 2, 1, 0.699);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(2, 2, 1, 0.5);
+    color: white;
+    text-shadow: 0 0 5px rgba(2, 2, 1, 0.5);
+    margin: 20px auto;
+}
+
+.content p {
+    font-size: 18px; 
+    line-height: 1.8; 
+    text-align: justify; 
+    text-indent: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 0 0 5px rgba(2, 2, 1, 0.5); 
+    padding: 0 10px; 
+}
+
+.musiccontent {
+    background-color: rgba(2, 2, 1, 0.699);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(2, 2, 1, 0.5);
+    color: white;
+    text-shadow: 0 0 5px rgba(2, 2, 1, 0.5);
+    margin: 40px auto;
+    text-align: center;
+    max-width: 1200px; 
+}
+
+.musiccontent img {
+    display: flex;
+    margin: 0 auto;
+    border-radius: 20px;
+
+    width: 80%;
+}
+
+
+.musiccontent h2 {
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.albumcovers {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    background-color: rgba(2, 2, 1, 0.699);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(2, 2, 1, 0.5);
+    color: white;
+    text-shadow: 0 0 5px rgba(2, 2, 1, 0.5);
+}
+
+.albumcovers h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.albumcovers img {
+    max-width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(2, 2, 1, 0.5);
+}
+
+
+
+.musiclistening {
+    background-color: rgba(50, 4, 71, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(2, 2, 1, 0.5);
+    color: white;
+    text-shadow: 0 0 5px rgba(2, 2, 1, 0.5);
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+.musiclistening img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50px;
+    width: 80%;
+}
+
+.musiclistening h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+h1, h2, h3 {
+    color: white;
+    text-shadow: 0 0 5px rgba(2, 2, 1, 0.5);
+}
+
+h1 {
+    font-size: 50px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 29px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 18px; 
+    line-height: 1.8; 
+    text-align: justify; 
+    text-indent: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 0 0 5px rgba(2, 2, 1, 0.5); 
+    padding: 0 10px; 
+}
+
+/* Go Home Icon Styling */
+.go-home-container {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: rgba(2, 2, 1, 0.699);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(2, 2, 1, 0.5);
+    color: white;
+    text-shadow: 0 0 5px rgba(2, 2, 1, 0.5);
+}
+
+.home-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(2, 2, 1, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: white;
+}
+
+.home-icon:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 0 20px 10px rgba(189, 57, 201, 0.8); /* Add shiny glow effect */
+}
+
+.home-icon:active {
+    transform: scale(0.95); /* Slight shrink effect on click */
+}

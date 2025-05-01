@@ -3,35 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Media Detox Blog</title>
+    <title>Social Media Detox Blog - Main Page</title>
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Google Fonts -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-        </style>
-
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-            </style>
-
-    
+    <link rel="stylesheet" href="./fadein.css">
+    <link rel="icon" type="image/x-icon" href="./resources/favicon.png">
+    <script src="scroll-effects.js"></script>
 </head>
-<body>
-     
-    <div class="headerTop">
-        <img id="headerpic" src="./resources/socials.jpg" alt="Social Media Detox">
+<body class="fade-in">
+    <div class="headerTop fade-in">
         <h1>Social Media Detox Blog</h1>
     </div>
-    
 
-    <div class="books flex" >
+    <div class="books flex fade-in">
         <a class="books-link" href="./books.html">
-        <img class="books-pic" src="./resources/booksereaders.webp" alt="Books">
-        <div class="overlay-1">Read more</div>
-    </a>
+            <img class="books-pic" src="./resources/booksereaders.webp" alt="Books and E-Readers">
+            <div class="overlay-1">Read more</div>
+        </a>
         <div class="books-txt-container">
-            <h2>Books can be very engaging</h2>
+            <h2>Books Can Be Very Engaging</h2>
             <p class="books-txt">
                 Books allow you to go into different worlds, learn new concepts, and engage in fun social
                 activities like book clubs and other social events. Books can be 
@@ -41,14 +30,14 @@
         </div>
     </div>
 
-    <!-- three different buttons--> 
-    <div class="music flex">
+    <div class="music flex fade-in">
         <a class="music-link" href="./music.html">
-            <img class="music-pic" src="./resources/music.jpg" alt="Music">
+            <img class="music-pic" src="./resources/music.webp" 
+            alt="A girl playing the piano and writing on music sheet">
             <div class="overlay-2">Read more</div>
         </a>
         <div class="music-txt-container">
-            <h2>Music will open new doors for you</h2>
+            <h2>Music Will Open New Doors for You</h2>
             <p class="music-txt">
                 When learning to play an instrument your brain will acquire and develop
                 new skills. You will learn to be more patient and disciplined.
@@ -58,14 +47,13 @@
         </div>
     </div>
 
-    <div class="games flex">
+    <div class="games flex fade-in">
         <a class="games-link" href="./games.html">
-            <img class="games-pic" src="./resources/gamesold.jpg">
+            <img class="games-pic" src="./resources/gamesold.webp" alt="picture of kids playing video games">
             <div class="overlay-3">Read more</div>
-            
         </a>
         <div class="games-txt-container">
-            <h2>You can still play games</h2>
+            <h2>You Can Still Play Games</h2>
             <p class="games-txt">
                 If you really enjoy video games, you can keep gaming, as long as you don't
                 make it a habit. You can still play short sessions of games, and enjoy the experience,
@@ -74,10 +62,5 @@
             </p>
         </div>
     </div>
-        </div>
-    </div>
-
-
-
 </body>
 </html>
