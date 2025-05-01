@@ -153,7 +153,18 @@ p {
 .gamecovers  {
     box-shadow: 0 0 10px rgba(2, 2, 1, 0.5);
     text-shadow: 0 0 5px rgba(2, 2, 1, 0.5);
-    background-color: rgba(0, 0, 0, 0.479);  
+    background-color: rgba(0, 0, 0, 0.479);
+    
+    
+}
+
+.gamecovers h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
 }
 
 
@@ -199,28 +210,32 @@ p {
     }
 
     .header h1 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .header h2, .header h3 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
-    .content, .musiccontent, .albumcovers, .musiclistening {
+    .content, .gamecontent, .boardgames, .gamecovers {
         padding: 10px;
         margin: 10px auto;
     }
 
-    .musiccontent img, .albumcovers img, .musiclistening img {
+    .game-item img, .boardgames img, .gamecovers img {
         width: 100%;
-        max-width: 100%;
+        max-width: 150px;
         height: auto;
         border-radius: 10px;
     }
 
-    .albumcovers {
-        flex-direction: column;
-        gap: 10px;
+    .game-item h3 {
+        font-size: 16px;
+    }
+
+    .go-home-container {
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
 
     .home-icon {
