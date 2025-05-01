@@ -20,6 +20,7 @@ body {
 
 .header {
     background-image: url("./resources/xbox.png");
+    background-position: top 0px left 300px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(2, 2, 1, 0.5); 
