@@ -1,4 +1,6 @@
-/* General Typography */
+html {
+    scroll-behavior: smooth; 
+}
 body {
     font-family: "Montserrat", sans-serif;
     margin: 10px auto;
@@ -7,7 +9,7 @@ body {
     max-width: 1200px;
     overflow-x: hidden;
 
-    background: linear-gradient(to right, #250430, #8e36a7, #250430), url("./resources/gamesback.jpg");
+    background: linear-gradient(to right, #250430, #8e36a7, #250430), url("./resources/gamesback.webp");
     background-blend-mode: overlay;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.479); /* Backimage opacity */
@@ -17,10 +19,14 @@ body {
 }
 
 .header {
-    background-image: url("./resources/gamebackground.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url("./resources/xbox.png");
+    background-position: top 0px left 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(2, 2, 1, 0.5); 
+    color: white; 
+    text-shadow: 0 0 5px rgba(2, 2, 1, 0.5);
+    
 }
 
 .content {

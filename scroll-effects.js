@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const handleScroll = () => {
         fadeInElements.forEach((element) => {
             const rect = element.getBoundingClientRect();
-            if (rect.top < window.innerHeight && rect.bottom > 0) {
+            if (rect.top < window.innerHeight && rect.bottom > 0 && !element.classList.contains("visible")) {
                 element.classList.add("visible");
             }
         });
